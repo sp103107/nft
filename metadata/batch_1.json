@@ -1,0 +1,32 @@
+[
+    {
+        "id": "Cyberpunk Avatar_avatar_1_1",
+        "theme": "Cyberpunk Avatar",
+        "prompt_text": "Generate a cyberpunk-style avatar with neon accents \ud83d\udd37 and intricate robotic details \ud83e\uddbe. The avatar has a glowing cybernetic arm with exposed circuits \ud83d\udca1, a sleek metallic tail \ud83d\udc09, and cybernetic ears with neon lights \ud83d\udd34 embedded. Fur is short and sleek with a neon-blue tint \ud83d\udc99. Adorn the avatar with reflective sunglasses \ud83d\udd76\ufe0f and a layered necklace with glowing pendants \ud83d\udc8d. Dress them in a high-tech jacket with metallic shoulder pads \ud83e\uddbe and fingerless gloves revealing claw-like metal fingers \ud83e\udd16. A neon-lit cityscape \ud83c\udf06 with holographic billboards and rain-soaked streets \ud83d\udca7 reflecting vibrant lights.",
+        "image_path": "images/batch_1/Cyberpunk Avatar_avatar_1_1.jpeg"
+    },
+    {
+        "id": "Psychedelic Avatar_avatar_1_2",
+        "theme": "Psychedelic Avatar",
+        "prompt_text": "Create a psychedelic-themed avatar with a trippy color palette \ud83c\udf08 and surreal patterns \ud83c\udf0c. The avatar has elongated limbs that ripple, with vibrant, bioluminescent fur in purples and greens \ud83d\udc9c\ud83d\udc9a. Tail swirls into a spiral with fractal patterns \ud83c\udf2a\ufe0f. The ears are large and curve outward with neon tips that glow softly \ud83d\udd2e. Add round, colorful sunglasses with kaleidoscope lenses \ud83c\udf20 and a necklace of rainbow-colored crystals \ud83d\udc8e. Dress them in a tie-dye shirt with flowing sleeves \ud83c\udf0c and cosmic symbols \ud83e\ude90. A surreal forest with glowing mushrooms \ud83c\udf44, swirling mist \ud83c\udf2b\ufe0f, and abstract shapes in neon colors \ud83d\udd35\ud83d\udd34.",
+        "image_path": "images/batch_1/Psychedelic Avatar_avatar_1_2.jpeg"
+    },
+    {
+        "id": "Fantasy Avatar_avatar_1_3",
+        "theme": "Fantasy Avatar",
+        "prompt_text": "Render a fantasy-style avatar with mythical characteristics \ud83e\uddda\u200d\u2642\ufe0f. The avatar has pointed elf-like ears adorned with small earrings \ud83d\udcab and a long, flowing tail covered in soft, luminescent fur \ud83c\udf19 with hints of silver \ud83c\udf15. The eyes are bright and piercing, reflecting wisdom \ud83d\udc41\ufe0f. Add a gold crown embedded with emerald gemstones \ud83d\udc51 and a necklace with a mystical amulet \ud83d\udd2e. Dress them in a flowing enchanted robe with intricate silver patterns \u2728 and a leather belt holding small, magical pouches \ud83c\udf0c. A magical forest with ethereal lights \ud83c\udf32 and ancient stone ruins covered in moss \ud83c\udf3f.",
+        "image_path": "images/batch_1/Fantasy Avatar_avatar_1_3.jpeg"
+    },
+    {
+        "id": "Vintage Avatar_avatar_1_4",
+        "theme": "Vintage Avatar",
+        "prompt_text": "Generate a vintage-themed avatar with a classic, retro style \ud83c\udfa9. The avatar has round, fluffy ears with vintage-styled earrings \ud83c\udf3c. The fur is soft, with subtle curls and a warm sepia tone \u2615. Tail is thick and slightly curled, reminiscent of old-fashioned elegance \ud83d\udc3e. Add round tortoiseshell glasses \ud83d\udd76\ufe0f and a beaded necklace with a vintage cameo pendant \ud83c\udfc5. Dress them in a high-waisted suit with suspenders and a bowtie \ud83c\udf80, and include leather gloves \ud83e\udde4. An old-fashioned parlor room with ornate wallpaper \ud83c\udfa8, a vintage record player \ud83c\udfb6, and an antique chandelier \ud83d\udca1.",
+        "image_path": "images/batch_1/Vintage Avatar_avatar_1_4.jpeg"
+    },
+    {
+        "id": "Futuristic Surreal Avatar_avatar_1_5",
+        "theme": "Futuristic Surreal Avatar",
+        "prompt_text": "Create a futuristic, surreal avatar with an ethereal look \ud83d\udef8. The avatar has translucent skin with swirling patterns visible underneath, resembling veins of light \ud83c\udf0c. Arms and legs are elongated and appear slightly transparent, with a metallic tail that emits a soft glow \ud83c\udf20. The ears are sleek and pointed, with embedded LED lights \ud83c\udf08. Add holographic wraparound sunglasses \ud83d\udd76\ufe0f and a necklace that floats around the neck like a ring of light \u2728. Dress them in a bodysuit made of iridescent material, which changes color based on the angle \ud83c\udf08. A surreal, floating city in space \ud83e\ude90 with neon-lit pathways, glowing stars \ud83c\udf20, and abstract geometric shapes \ud83d\udd3b\ud83d\udd36.",
+        "image_path": "images/batch_1/Futuristic Surreal Avatar_avatar_1_5.jpeg"
+    }
+]

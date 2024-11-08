@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "source_file": "data/prompt_for_nft_creation.txt",
+    "conversion_date": "2024-11-07T22:03:37.175502",
+    "version": "1.0",
+    "sections_found": 8,
+    "images_found": 0
+  },
+  "content": {
+    "Main Content": "NFT Prompt 🌐 - A highly detailed set of prompts designed to create unique avatars with precise details for every body part, accessory, and setting 🌈. Each theme provides commands to enhance and define unique features 💡✨.",
+    
+    "Avatar Prompts": {
+      "Cyberpunk Avatar": {
+        "Prompt": "Generate a cyberpunk-style avatar with neon accents 🔷 and intricate robotic details 🦾. The avatar has a glowing cybernetic arm with exposed circuits 💡, a sleek metallic tail 🐉, and cybernetic ears with neon lights 🔴 embedded. Fur is short and sleek with a neon-blue tint 💙. Adorn the avatar with reflective sunglasses 🕶️ and a layered necklace with glowing pendants 💍. Dress them in a high-tech jacket with metallic shoulder pads 🦾 and fingerless gloves revealing claw-like metal fingers 🤖.",
+        "Background": "A neon-lit cityscape 🌆 with holographic billboards and rain-soaked streets 💧 reflecting vibrant lights."
+      },
+      "Psychedelic Avatar": {
+        "Prompt": "Create a psychedelic-themed avatar with a trippy color palette 🌈 and surreal patterns 🌌. The avatar has elongated limbs that ripple, with vibrant, bioluminescent fur in purples and greens 💜💚. Tail swirls into a spiral with fractal patterns 🌪️. The ears are large and curve outward with neon tips that glow softly 🔮. Add round, colorful sunglasses with kaleidoscope lenses 🌠 and a necklace of rainbow-colored crystals 💎. Dress them in a tie-dye shirt with flowing sleeves 🌌 and cosmic symbols 🪐.",
+        "Background": "A surreal forest with glowing mushrooms 🍄, swirling mist 🌫️, and abstract shapes in neon colors 🔵🔴."
+      },
+      "Fantasy Avatar": {
+        "Prompt": "Render a fantasy-style avatar with mythical characteristics 🧚‍♂️. The avatar has pointed elf-like ears adorned with small earrings 💫 and a long, flowing tail covered in soft, luminescent fur 🌙 with hints of silver 🌕. The eyes are bright and piercing, reflecting wisdom 👁️. Add a gold crown embedded with emerald gemstones 👑 and a necklace with a mystical amulet 🔮. Dress them in a flowing enchanted robe with intricate silver patterns ✨ and a leather belt holding small, magical pouches 🌌.",
+        "Background": "A magical forest with ethereal lights 🌲 and ancient stone ruins covered in moss 🌿."
+      },
+      "Vintage Avatar": {
+        "Prompt": "Generate a vintage-themed avatar with a classic, retro style 🎩. The avatar has round, fluffy ears with vintage-styled earrings 🌼. The fur is soft, with subtle curls and a warm sepia tone ☕. Tail is thick and slightly curled, reminiscent of old-fashioned elegance 🐾. Add round tortoiseshell glasses 🕶️ and a beaded necklace with a vintage cameo pendant 🏅. Dress them in a high-waisted suit with suspenders and a bowtie 🎀, and include leather gloves 🧤.",
+        "Background": "An old-fashioned parlor room with ornate wallpaper 🎨, a vintage record player 🎶, and an antique chandelier 💡."
+      },
+      "Futuristic Surreal Avatar": {
+        "Prompt": "Create a futuristic, surreal avatar with an ethereal look 🛸. The avatar has translucent skin with swirling patterns visible underneath, resembling veins of light 🌌. Arms and legs are elongated and appear slightly transparent, with a metallic tail that emits a soft glow 🌠. The ears are sleek and pointed, with embedded LED lights 🌈. Add holographic wraparound sunglasses 🕶️ and a necklace that floats around the neck like a ring of light ✨. Dress them in a bodysuit made of iridescent material, which changes color based on the angle 🌈.",
+        "Background": "A surreal, floating city in space 🪐 with neon-lit pathways, glowing stars 🌠, and abstract geometric shapes 🔻🔶."
+      }
+    }
+  },
+  "Clothing and Accessories Database": {
+    "Tops": [
+      "Turtleneck sweaters 🧥",
+      "Futuristic bodysuits 👚",
+      "Tie-dye shirts 🌌",
+      "High-tech jackets with LED details 🔆",
+      "Enchanted robes 🌠"
+    ],
+    "Pants": [
+      "High-waisted trousers 👖",
+      "Cyber leggings 👽",
+      "Flowing mystical skirts 🧚‍♀️",
+      "Vintage slacks 👔"
+    ],
+    "Accessories": [
+      "Reflective sunglasses 🕶️",
+      "Kaleidoscope sunglasses 🌈",
+      "Tortoiseshell glasses 🐢",
+      "Beaded necklaces 💍",
+      "Crystal amulets 🔮"
+    ],
+    "Footwear": [
+      "Combat boots 🥾",
+      "Leather shoes 👞",
+      "Sandals with magical symbols 🧙‍♂️",
+      "Futuristic boots with LED soles 👢"
+    ]
+  },
+  "Environment/Setting Database": {
+    "Cyberpunk": "Neon-lit cityscapes 🌃, holographic billboards 🖥️, rain-soaked streets 🌧️.",
+    "Psychedelic": "Surreal forests 🌲, glowing mushrooms 🍄, abstract landscapes with swirling colors 🔮.",
+    "Fantasy": "Magical forests 🧙‍♀️, ancient ruins 🏰, castles under starry skies 🌌.",
+    "Vintage": "Parlor rooms 🛋️, antique libraries 📚, old-fashioned dining rooms with chandeliers 💡.",
+    "Futuristic/Surreal": "Floating cities in space 🛸, neon-lit pathways 🌠, cosmic landscapes with abstract geometric shapes 🌀."
+  }
+}

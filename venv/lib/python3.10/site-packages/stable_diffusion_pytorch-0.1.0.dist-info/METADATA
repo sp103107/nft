@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stable-diffusion-pytorch
+Version: 0.1.0
+Summary: stable-diffusion-pytorch
+Author: Michiyasu Uchiyama
+License: MIT
+Keywords: stable diffusion
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# stable-diffusion-pytorch-fork
+This repository was made for Udemy<br>
+Forked from kjsman / stable-diffusion-pytorch.<br>
+https://github.com/kjsman/stable-diffusion-pytorch<br>
+
+
+

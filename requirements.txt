@@ -1,0 +1,4 @@
+Pillow                 # For image processing
+python-dotenv          # To load .env variables
+stable-diffusion-pytorch  # Hypothetical package for Stable Diffusion
+pip install requests

@@ -1,0 +1,159 @@
+{
+    "project_title": "NFT Collection with Hidden Anomalies",
+    "project_overview": "An NFT collection of unique avatars with front and back designs, featuring hidden anomalies in each card for added engagement.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Set Up Directory Structure",
+        "description": "Organize files and directories for image storage, metadata, prompt templates, and main scripts.",
+        "status": "completed",
+        "details": {
+          "main_directory": "project-directory/",
+          "subdirectories": [
+            "images/",
+            "metadata/",
+            "scripts/"
+          ],
+          "notes": "Images will be stored in 'images/', JSON metadata in 'metadata/', and scripts in 'scripts/'."
+        }
+      },
+      {
+        "step_number": 2,
+        "title": "Generate Prompt Templates",
+        "description": "Create a JSON file for storing prompt templates for different themes (Cyberpunk, Psychedelic, Vintage, Fantasy, etc.).",
+        "status": "in_progress",
+        "details": {
+          "template_file": "prompts.json",
+          "categories": [
+            {
+              "name": "Cyberpunk",
+              "attributes": [
+                "style: Neon and futuristic",
+                "accessories: Reflective sunglasses, neon pendant",
+                "clothing: High-tech jacket",
+                "background: Neon-lit cityscape"
+              ]
+            },
+            {
+              "name": "Vintage",
+              "attributes": [
+                "style: 1920s vintage",
+                "accessories: Monocle, cameo pendant",
+                "clothing: Tweed suit",
+                "background: Vintage parlor room"
+              ]
+            }
+          ],
+          "notes": "Add more detailed attribute options for each theme. Aim for at least 5-10 attributes per theme."
+        }
+      },
+      {
+        "step_number": 3,
+        "title": "Generate Front Images",
+        "description": "Use AI (e.g., Stable Diffusion) to create the primary artwork for each avatar based on the prompts in 'prompts.json'.",
+        "status": "not_started",
+        "details": {
+          "output_directory": "images/",
+          "file_naming": "e.g., cyberpunk_avatar_1_front.jpeg",
+          "metadata_format": [
+            "id",
+            "style",
+            "accessories",
+            "clothing",
+            "background"
+          ],
+          "notes": "Each front image represents the main art style and personality of the avatar."
+        }
+      },
+      {
+        "step_number": 4,
+        "title": "Design Back Images (Backstory & Anomalies)",
+        "description": "Create a template in Illustrator or Photoshop for the back image, including space for backstory, attributes, and hidden anomalies.",
+        "status": "not_started",
+        "details": {
+          "template_file": "back_template.ai",
+          "backstory_format": "Character name, backstory, attributes, hidden anomaly",
+          "anomaly_types": [
+            "visual glitches",
+            "hidden symbols",
+            "secret codes",
+            "attribute variations",
+            "background anomalies"
+          ],
+          "output_directory": "images/",
+          "file_naming": "e.g., cyberpunk_avatar_1_back.jpeg",
+          "notes": "Ensure the anomaly is subtle and unique to each card, but follows the theme. E.g., for Cyberpunk, consider a small hidden QR code."
+        }
+      },
+      {
+        "step_number": 5,
+        "title": "Create JSON Metadata for Each Avatar",
+        "description": "For each avatar, create a JSON file with metadata linking to the front and back images, backstory, attributes, and anomaly information.",
+        "status": "not_started",
+        "details": {
+          "metadata_directory": "metadata/",
+          "file_format": "JSON",
+          "example_metadata": {
+            "name": "Cyberpunk Avatar #1",
+            "description": "Elite cyber warrior from Cybria.",
+            "image_front": "images/cyberpunk_avatar_1_front.jpeg",
+            "image_back": "images/cyberpunk_avatar_1_back.jpeg",
+            "attributes": [
+              { "trait_type": "Style", "value": "Cyberpunk" },
+              { "trait_type": "Accessory", "value": "Reflective Sunglasses" },
+              { "trait_type": "Hidden Anomaly", "value": "Yes" }
+            ]
+          },
+          "notes": "Each JSON metadata file should capture the essential traits and any hidden anomaly information to give the collectors hints."
+        }
+      },
+      {
+        "step_number": 6,
+        "title": "Add Hidden Anomalies to Each Card",
+        "description": "Incorporate hidden elements in each avatar card to make it unique. Place the anomalies on either the front or back of the card.",
+        "status": "not_started",
+        "details": {
+          "anomaly_types": [
+            "visual glitches",
+            "symbols (e.g., tiny logos or QR codes)",
+            "hidden text or symbols in backgrounds"
+          ],
+          "manual_process": "Anomalies can be manually added in Adobe Illustrator or Photoshop.",
+          "automated_process": "Use a Python script to add random anomalies across batches, saving in the 'images/' directory.",
+          "notes": "Make anomalies subtle enough to not disrupt the design, but visible on closer inspection."
+        }
+      },
+      {
+        "step_number": 7,
+        "title": "Quality Check and Final Adjustments",
+        "description": "Review all generated images and metadata to ensure consistency, quality, and alignment with the project's style and story.",
+        "status": "not_started",
+        "details": {
+          "checklist": [
+            "Confirm front and back images are correctly paired.",
+            "Verify JSON metadata links to correct files.",
+            "Ensure anomalies are well-hidden but identifiable.",
+            "Test a few NFTs to ensure compatibility on platforms like OpenSea."
+          ],
+          "notes": "Perform a thorough review to maintain the integrity and quality of the collection before minting."
+        }
+      },
+      {
+        "step_number": 8,
+        "title": "Mint and Deploy NFTs",
+        "description": "Mint each avatar card with front and back images as separate files (or as a composite, if preferred) and deploy to an NFT platform.",
+        "status": "not_started",
+        "details": {
+          "platform": "OpenSea (or chosen NFT marketplace)",
+          "minting_process": "Use JSON metadata and corresponding image files to mint each NFT with front/back view.",
+          "post-minting_tasks": [
+            "Announce hidden anomalies to create excitement.",
+            "Promote collection on social media and community channels.",
+            "Engage with collectors by hosting discovery events or hints for anomalies."
+          ],
+          "notes": "Consider incentivizing early collectors by revealing hidden Easter eggs gradually to build engagement."
+        }
+      }
+    ],
+    "overall_notes": "This JSON structure serves as a roadmap to track each step in the creation of an NFT collection with front/back designs and hidden anomalies. Update the 'status' field as each step progresses, and keep track of any unique challenges or changes under 'notes'."
+  }
