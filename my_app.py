@@ -10,8 +10,9 @@ import gradio as gr
 load_dotenv()
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
-# Hugging Face API URL for Stable Diffusion with diffusers
-HF_API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
+# Hugging Face API URL for Stable Diffusion
+HF_API_URL = "https://api-inference.huggingface.co/models/huggingface/stable-diffusion"
+
 headers = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
 
 # Load prompts from prompts/prompts.json
@@ -23,7 +24,6 @@ def load_prompts(filename="prompts/prompts.json"):
 def generate_image(prompt_text, output_path, retries=3, delay=5):
     for attempt in range(retries):
         response = requests.post(HF_API_URL, headers=headers, json={"inputs": prompt_text})
-        
         if response.status_code == 200:
             with open(output_path, "wb") as f:
                 f.write(response.content)
@@ -37,29 +37,34 @@ def generate_image(prompt_text, output_path, retries=3, delay=5):
     print(f"Failed to generate image for prompt after {retries} attempts.")
     return False
 
-# Batch generation function for handling up to 100 images
-def generate_batch(batch_id):
+# Batch generation function for handling up to 50 images
+def generate_batch(batch_id, batch_size=50):
     prompts = load_prompts()
     batch_metadata = []
     image_dir = Path(f"images/batch_{batch_id}")
     image_dir.mkdir(parents=True, exist_ok=True)
+    total_generated = 0
 
+    # Loop to generate images in batches of `batch_size`
     for i, theme in enumerate(prompts.keys(), 1):
-        if i > 100:
-            break  # Stop after generating 100 images
+        if total_generated >= batch_size:
+            print(f"Reached batch size limit of {batch_size}.")
+            break
+
         prompt_data = prompts[theme]
         print(f"Debug: Processing theme {theme} for batch_id {batch_id}")
 
-        required_keys = ['style', 'features', 'background']
+        # Define the required keys as strings
+        required_keys = ["style", "features", "background"]
         missing_keys = [key for key in required_keys if key not in prompt_data]
-        
+
         if missing_keys:
             print(f"Error: Missing keys {missing_keys} in prompt_data for batch_id {batch_id}")
             continue
 
         prompt_text = f"{prompt_data['style']} with {', '.join(prompt_data['features'])}, in {prompt_data['background']}."
         image_path = image_dir / f"{theme}_avatar_{batch_id}_{i}.jpeg"
-        
+
         # Generate image and save if successful
         if generate_image(prompt_text, image_path):
             metadata = {
@@ -69,10 +74,11 @@ def generate_batch(batch_id):
                 "image_path": str(image_path),
             }
             batch_metadata.append(metadata)
+            total_generated += 1
 
     # Save metadata to JSON file
     metadata_file = Path(f"metadata/batch_{batch_id}.json")
-    metadata_file.parent.mkdir(parents=True, exist_ok=True)  # Ensure directory exists
+    metadata_file.parent.mkdir(parents=True, exist_ok=True)
     with open(metadata_file, "w") as f:
         json.dump(batch_metadata, f, indent=4)
 
@@ -80,8 +86,8 @@ def generate_batch(batch_id):
     return batch_metadata
 
 # Gradio interface function
-def gradio_generate(batch_id=1):
-    metadata = generate_batch(batch_id)
+def gradio_generate(batch_id=1, batch_size=50):
+    metadata = generate_batch(batch_id, batch_size=batch_size)
     output_paths = [meta["image_path"] for meta in metadata]
     return output_paths
 
@@ -89,14 +95,16 @@ def gradio_generate(batch_id=1):
 with gr.Blocks() as demo:
     gr.Markdown("# NFT Image Generator")
     batch_id_input = gr.Number(label="Batch ID", value=1, precision=0)
+    batch_size_input = gr.Slider(label="Batch Size", minimum=1, maximum=50, step=1, value=50)
     generate_button = gr.Button("Generate Images")
     output_gallery = gr.Gallery(label="Generated Images", show_label=False)
 
     generate_button.click(
-        fn=gradio_generate, 
-        inputs=batch_id_input, 
+        fn=gradio_generate,
+        inputs=[batch_id_input, batch_size_input],
         outputs=output_gallery
     )
 
+# Launch Gradio interface
 if __name__ == "__main__":
     demo.launch()
